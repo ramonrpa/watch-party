@@ -1,0 +1,27 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    [
+      "styled-components",
+      {
+        "ssr": true,
+        "displayName": true
+      }
+    ],
+    "inline-react-svg"
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        [
+          "styled-components",
+          {
+            "ssr": false,
+            "displayName": false
+          }
+        ],
+        "inline-react-svg"
+      ]
+    }
+  }
+}
